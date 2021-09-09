@@ -1,9 +1,7 @@
 let express = require('express')
 let path = require('path')
 let app = express()
-let port = 8000
-
-console.log(`running express server at port:${port}`)
+let port = 8000;
 
 //define the routes to the pages
 app.get(
@@ -31,9 +29,7 @@ app.get(
 app.use(express.static('./'))
 
 //listen port
-app.listen(port, function () {
-    console.log(`Example app listening at http://localhost:${port}`)
-})
+app.listen(port, ()=>console.log(`Example app listening at http://localhost:${port}`))
 
 
 /**----------------> <------------------------------------
